@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Home - McDonald's: Burgers, Fries & More | McDonald's Pakistan
+    </title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="https://atugatran.github.io/FontAwesome6Pro/css/all.min.css">
+    <link href=" https://fonts.cdnfonts.com/css/speedy " rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        .custom-pagination .page-link {
+            width: 10px;
+            /* Circle size */
+            height: 10px;
+            border-radius: 50%;
+            /* Perfect circle */
+            display: inline-block;
+            /* Proper rendering */
+            padding: 0;
+            margin: 0 5px;
+            /* 10px spacing (5px on each side) */
+            background-color: #ddd;
+            /* Default background color */
+            border: 1px solid #ccc;
+            /* Border for circles */
+            transition: background-color 0.3s ease;
+            /* Smooth hover effect */
+        }
+
+        /* Remove the default focus outline */
+        .custom-pagination .page-link:focus {
+            outline: none;
+        }
+
+        /* Hover effect: blue background */
+        .custom-pagination .page-link:hover {
+            background-color: #db0007;
+            /* Blue color on hover */
+            border-color: #db0007;
+            cursor: pointer;
+            /* Show pointer on hover */
+        }
+
+        /* Active state: blue background */
+        .custom-pagination .page-item.active .page-link {
+            background-color: #db0007;
+            /* Blue active color */
+            border-color: #db0007;
+        }
+
+        * {
+            font-family: sans-serif;
+            overflow-x: hidden;
+        }
+
+        section {
+            overflow-y: hidden;
+        }
+
+        a {
+            color: black !important;
+        }
+
+        /* .class {
+    max-width: 40% !important;
+  } */
+
+        #hel {
+            max-width: 65% !important;
+        }
+
+        .main {
+            display: flex;
+            /* background-color: aqua; */
+            justify-content: center;
+            margin-top: 2%;
+            /* font-size: large; */
+        }
+
+        .position1 {
+            position: absolute;
+        }
+
+        .position2 {
+            position: relative;
+            top: 350px;
+            left: 50px;
+        }
+
+        * {
+            font-family: sans-serif;
+        }
+
+        .custom-pagination .page-link {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ddd;
+            border: 1px solid #ccc;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .custom-pagination .page-item.active .page-link {
+            background-color: #db0007;
+            border-color: #db0007;
+        }
+
+        .carousel-inner img {
+            transition: opacity 1s ease-in-out;
+        }
+
+        .card {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            width: 22rem;
+            height: 19rem;
+        }
+
+        /*         
+        :root {
+            --bs-spacing-multiplier: 0.25rem;
+        }
+
+        [class*="p-"]:not([class*="p-0"]) {
+            margin: 0;
+            padding: var(--bs-spacing-multiplier);
+        }
+
+        [class*="m-"]:not([class*="m-0"]) {
+            margin: var(--bs-spacing-multiplier);
+            padding: 0;
+        }
+
+        [class*="fsize-"] {
+            font-size: calc(var(--bs-spacing-multiplier) * 4);
+        }
+
+        [class*="p-"] {
+            padding: calc(var(--bs-spacing-multiplier) * 1.5);
+        } */
+    </style>
+
+</head>
+
+<body>
+    <!-- Nav Barr -->
+    <section class="container-lg-fluid container-md-fluid shadow-sm class">
+
+        <div class="container-lg container-md d-flex d-md-flex  px-0 ">
+
+
+            <div class=" align-items-center d-flex ">
+                <img role="button" class="img-fluid" src="./images/logo.png" alt="">
+            </div>
+
+            <div class=" container-lg px-0">
+
+                <div class="">
+
+                    <section class="d-flex justify-content-between align-items-center pt-2 pb-3">
+                        <div class="">
+                            <ul class="nav py-2 ps-2  ">
+                                <li role="button" class="nav-item ">Careers</li>
+                                <li role="button" class="nav-item ps-4">Contact Us</li>
+                            </ul>
+                        </div>
+
+                        <div class="nav py-2">
+
+                            <button class="border-0 bg-white btn-sm fs-6">
+                                <i class="fa-solid fa-magnifying-glass">
+                                </i>
+                                Search</button>
+
+                            <button class=" border-0 bg-white btn-sm ps-5 pe-"><i style="color: red;"
+                                    class="fa-sharp fa-solid fa-location-dot"></i>&nbsp;Locate Me</button>
+
+                            <button style="background-color: rgb(255, 188, 4);border: none;"
+                                class="rounded-1 ms-5 px-4 py-2">Order
+                                on&nbsp;McDelivery</button>
+                        </div>
+
+                    </section>
+
+
+                    <section class="">
+                        <div class=" ">
+                            <section id="hel" class="d-flex justify-content-around pb-3 align-items-center">
+                                <div class="d-flex align-items-center ps-2">
+                                    <a href="" class="link-underline link-underline-opacity-0">
+                                        <span class="text-dark">Our menu
+                                        </span>
+                                        <i style="color: black;font-size:12px;" class=" fa-solid fa-chevron-down"></i>
+                                    </a>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center mx-4">
+                                    <a href="" class="link-underline link-underline-opacity-0">
+                                        <span class="text-dark">About our food</span>
+                                    </a>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center mx-4">
+                                    <a href="" class="link-underline link-underline-opacity-0">
+                                        <span class="text-dark">Your right to know</span>
+                                    </a>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center mx-4">
+                                    <a href="" class="link-underline link-underline-opacity-0">
+                                        <span class="text-dark">Our app</span>
+                                    </a>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center mx-4">
+                                    <a href="" class="link-underline link-underline-opacity-0">
+                                        <span class="text-dark">family</span>
+                                    </a>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center mx-4">
+                                    <a href="" class="link-underline link-underline-opacity-0">
+                                        <span class="text-dark">Trending now</span>
+                                    </a>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Nav Barr End -->
+
+
+    <!-- Crosouel Start -->
+
+    <main class="main">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-index="0">
+                    <img src="./images/Temptation-Cone-24-D.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-index="1">
+                    <img src="./images/KP-2024-D.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-index="2">
+                    <img src="./images/Daily-Delisious-24-D.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-index="3">
+                    <img src="./images/Chick-Mac-D.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-index="4">
+                    <img src="./images/delivery-points-desktop-slider.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 id="card-title" class=" mt-0 card-title fw-bold fs-2">Cool,Creamy, Irresistible</h5>
+                    <p id="card-text" style="font-size: 1rem;" class="mt-1 card-text">Scoop up happiness with our
+                        irresistible soft serve cones and strawberry sundaes. Limited time, unlimited temptation--grab
+                        yours today!</p>
+                    <a href="#" style="font-size: 0.8rem;" class="mt-1 btn px-3 py-2 btn-warning">Visit Now</a>
+                </div>
+                <ul class="pagination ps-3 custom-pagination">
+                    <li class="page-item active" data-index="0">
+                        <span class="page-link"></span>
+                    </li>
+                    <li class="page-item" data-index="1">
+                        <span class="page-link"></span>
+                    </li>
+                    <li class="page-item" data-index="2">
+                        <span class="page-link"></span>
+                    </li>
+                    <li class="page-item" data-index="3">
+                        <span class="page-link"></span>
+                    </li>
+                    <li class="page-item" data-index="4">
+                        <span class="page-link"></span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+    <!-- Crosouel End -->
+
+
+    <!-- Cards Start -->
+
+    <div class="mt-5 conatiner-fluid d-flex justify-content-center  " style="height: 100vh;width:100vw;">
+        <section class="container  d-flex flex-lg-wrap" style="width: 100vw;height: 100vh;">
+
+
+
+
+            <div class="top-0  my-5 mx-2 position-relative card rounded-1" style="width: 25rem;height:30rem;">
+                <img src="https://mcdonalds.com.pk/wp-content/uploads/2022/07/mccafe-dsk-en.jpg" alt="">
+                <span class="d-flex fw-bolder justify-content-center color-danger my-4"
+                    style="font-size: 3rem; color: #db0007">McCafé</span>
+
+                <div class="card-body">
+
+                    <p class="card-text mx-4" style="text-align:center;line-height:1.5em;">
+                        Browse our menu for more information on topics such as our tasty coffee and espresso drinks.
+                    </p>
+
+                    <div class="d-flex justify-content-center">
+
+                        <a href="#" style="font-size: 0.8rem;" class="mt-1 btn px-3  py-2 btn-warning">Visit Now</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="top-0  my-5 mx-2 card rounded-1 position-relative" style="width: 25rem;height:30rem;">
+                <img src="https://mcdonalds.com.pk/wp-content/uploads/2022/07/mcdelivery-574x249-en.jpg" alt="">
+                <span class="d-flex fw-bold justify-content-center color-danger my-4"
+                    style="font-size: 1.5rem;font-weight:bold; color: #db0007">McDelivery</span>
+
+                <div class="card-body">
+
+                    <p class="card-text mx-4 my-5" style="text-align:center;line-height:1.5em;">
+                        Delivering food at your doorsteps.
+                    </p>
+
+                    <div class="d-flex justify-content-center">
+
+                        <a href="#" style="font-size: 0.8rem;" class="mt-1 btn px-3  py-2 btn-warning">Order Now</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="top-0  my-5 mx-2 card rounded-1 position-relative" style="width: 25rem;height:30rem;">
+                <img src="https://mcdonalds.com.pk/wp-content/uploads/2022/07/uae-our-app-feature-callout-desktop.jpg"
+                    alt="">
+                <span class="d-flex fw-bolder justify-content-center color-danger my-4"
+                    style="font-size: 1.5rem; color: #db0007">Our App</span>
+
+                <div class="card-body">
+
+                    <p class="card-text mx-4" style="text-align:center;line-height:1.5em;">
+                        McDonald's in your Pocket.
+                    </p>
+
+                    <div class="d-flex justify-content-center">
+
+                        <a href="#" style="font-size: 0.8rem;" class="mt-1 btn px-3  py-2 btn-warning">Download Now</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="top-0 mt-4 mx-2 position-relative card rounded-1" style="width: 25rem;height:30rem;">
+                <img src="https://mcdonalds.com.pk/wp-content/uploads/2022/07/item-4.png" alt="">
+                <span class="d-flex fw-bolder justify-content-center color-danger my-4"
+                    style="font-size: 1.5rem; color: #db0007">Our Menu</span>
+
+                <div class="card-body">
+
+                    <p class="card-text mx-4" style="text-align:center;line-height:1.5em;">
+                        Our exclusive menu is waiting for you.
+                    </p>
+
+                    <div class="d-flex justify-content-center">
+
+                        <a href="#" style="font-size: 0.8rem;" class="mt-1 btn px-3  py-2 btn-warning">Order Now</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="top-0 mt-4 mx-2 card rounded-1 position-relative" style="width: 25rem;height:30rem;">
+                <img src="https://mcdonalds.com.pk/wp-content/uploads/2022/07/item-5.png" alt="">
+                <span class="d-flex fw-bolder justify-content-center color-danger my-4"
+                    style="font-size: 1.5rem; color: #db0007">Trending Now</span>
+
+                <div class="card-body">
+
+                    <p class="card-text mx-4" style="text-align:center;line-height:1.5em;">
+                        Find out what's new.
+                    </p>
+
+                    <div class="d-flex justify-content-center">
+
+                        <a href="#" style="font-size: 0.8rem;" class="mt-1 btn px-3  py-2 btn-warning">Learn More</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="top-0 mt-4 mx-2 card rounded-1 position-relative" style="width: 25rem;height:30rem;">
+                <img src="https://mcdonalds.com.pk/wp-content/uploads/2022/08/careers-info-card-1.png" alt="">
+                <span class="d-flex fw-bolder justify-content-center color-danger my-4"
+                    style="font-size: 3rem; color: #db0007">Careers</span>
+
+                <div class="card-body">
+
+                    <p class="card-text mx-4" style="text-align:center;line-height:1.5em;">
+                        Be a part of our team.
+                    </p>
+
+                    <div class="d-flex justify-content-center">
+
+                        <a href="#" style="font-size: 0.8rem;" class="mt-1 btn px-3  py-2 btn-warning">Apply Now</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- Crosouel Cards -->
+
+    <!-- Footer Start -->
+
+    <footer class="conatiner">
+        <footer class="conatiner">
+            <HR class=" " style="max-width: 70%;">
+            </HR>
+        </footer>
+        <!-- Footer End -->
+
+        <script src="app.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
